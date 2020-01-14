@@ -44,7 +44,7 @@
 <script>
   $(function() {
 
-    var stripe = Stripe('<%= Rails.application.credentials.stripe[:publishable_key] %>');
+   
     var elements = stripe.elements();
 
     var card = elements.create('card', {
