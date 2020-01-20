@@ -20,13 +20,13 @@
   <%# ALERT & NOTICE %>
  <% if notice != nil || alert != nil %>
    <% if notice != nil %>
-     <div class=“notification form-actions text-center alert alert-success” role=“alert”>
-       <button type=“button” class=“notice close” data-dismiss=“alert” aria-label=“Close”><span aria-hidden=“true”>&times;</span></button>
+     <div class="notification form-actions text-center alert alert-success" role="alert">
+       <button type="button" class=“notice close” data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
        <strong><%= notice %></strong>
      </div>
    <% else %>
-     <div class=“notification text-center alert alert-alert” role=“alert”>
-       <button type=“button” class=“alert close” data-dismiss=“alert” aria-label=“Close”><span aria-hidden=“true”>&times;</span></button>
+     <div class="notification text-center alert alert-alert" role="alert">
+       <button type="button" class="alert close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
        <strong><%= alert %></strong>
      </div>
    <% end %>
