@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  require 'sidekiq/web'
-  mount Sidekiq::Web => '/sidekiq'
+  # require 'sidekiq/web'
+  # mount Sidekiq::Web => '/sidekiq'
   resources :organizations
-  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks',  registrations: 'users/registrations'}
+  devise_for :users
   devise_scope :users do
     get "sign_out", :to => "devise/sessions#destroy"
   end
