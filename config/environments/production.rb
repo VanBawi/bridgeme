@@ -68,7 +68,7 @@ Rails.application.configure do
   port:                 587,
   domain:               'golshanstay.site',
   user_name:            'superjackpower85@gmail.com',
-  password:             Rails.application.credentials.email[:email_password],
+  password:              Rails.application.credentials.email[:email_password],
   authentication:       'plain',
   enable_starttls_auto: true
 }
@@ -84,7 +84,7 @@ Rails.application.configure do
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
-  config.i18n.fallbacks = true
+  config.i18n.fallbacks = [I18n.default_locale]
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
@@ -104,7 +104,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  ENV["ELASTICSEARCH_URL"] = "https://search-golshanstay-rcevp32hh4gtxiuhpo7dewnx2y.ap-southeast-1.es.amazonaws.com:443"
+  # ENV["ELASTICSEARCH_URL"] = "https://search-golshanstay-rcevp32hh4gtxiuhpo7dewnx2y.ap-southeast-1.es.amazonaws.com:443"
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write
