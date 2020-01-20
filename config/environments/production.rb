@@ -68,7 +68,7 @@ Rails.application.configure do
   port:                 587,
   domain:               'golshanstay.site',
   user_name:            'superjackpower85@gmail.com',
-  password:              Rails.application.credentials.email[:email_password],
+  # password:              Rails.application.credentials.email[:email_password],
   authentication:       'plain',
   enable_starttls_auto: true
 }

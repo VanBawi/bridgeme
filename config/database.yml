@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
-  database: biblichor_production
-  username: Biblichor
-  password: <%= ENV['BIBLICHOR_DATABASE_PASSWORD'] %>
+  database: golshan_stay_production
+  pool: 5
+  timeout: 5000
+  # username: Biblichor
+  # password: <%= ENV['BIBLICHOR_DATABASE_PASSWORD'] %>

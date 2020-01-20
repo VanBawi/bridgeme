@@ -13,7 +13,6 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery-ui")
 import 'bootstrap';
-import './geocomplete';
 import './jquery.raty';
 window.jQuery = $;
 window.$ = $;
