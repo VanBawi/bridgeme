@@ -11,8 +11,14 @@ GIT
       polyamorous (= 2.3.2)
 
 GEM
-  remote: https://rubygems.org/
   remote: https://rails-assets.org/
+  specs:
+    rails-assets-card (2.4.0)
+      rails-assets-jquery (>= 1.5)
+    rails-assets-jquery (3.4.1)
+
+GEM
+  remote: https://rubygems.org/
   specs:
     actionmailer (6.0.2.1)
       actionpack (= 6.0.2.1)
@@ -224,14 +230,11 @@ GEM
     public_suffix (4.0.3)
     puma (3.12.2)
     puma (3.12.2-java)
-    rack (2.1.2)
+    rack (2.2.6.2)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rails-assets-card (2.4.0)
-      rails-assets-jquery (>= 1.5)
-    rails-assets-jquery (3.4.1)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
